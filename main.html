@@ -4,10 +4,10 @@
 	<link rel = "stylesheet" href="style.css">
 </head>
 <body>
-	<h2>AAA Testing</h2>
+	<h1>AAA Testing</h1>
 	<br>
 	<article>
-		<h3>What is AAA Testing?</h3>
+		<h2>What is AAA Testing?</h2>
 		<p>AAA testing is a pattern for writing unit tests. Testing provides an empirical feedback loop for development. Testing can keep us safe by letting us know when things break and without tests, coding can be dangerous.<br>
 		The pattern focuses each test on a single function. Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:</p>
 		<ol>
@@ -16,15 +16,18 @@
 			<li><p>Act on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method. Keep actions focused on the target behavior</p></li>
 			<li><p>Assert expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Assertions will ultimately determine if the test passes or fails.i</p></li>
 		</ol>
-	</article>
-	<article>
-		<h3>Unit Test Example</h3>
-		<p>Here is a unit test, testing the addition operation on a calculator program</p>
-		<img src="aaa.png" border= 0 style="display:block">
+	
+		<h2>Unit Test Example</h2>
+		<div>
+			<img src="aaa.png" alt ="aaa example">
+		</div>
+		<p id ="top-pad">Example of a unit test, testing the addition operation on a calculator program</p>
 		<ol>
-			<li>The arrange step creates a variable named "my_numbers" with the values of 1.0 and 2.0</li>
-			<li>The act step instantiates an Addition object</li>
+			<li>The arrange step creates a variable named "my_numbers" with the values of 1.0 and 2.0. The next line creates an Addition object instantiating the values from "my_numbers" to it and
+				assigning it to the variable, "addition".</li>
+			<li>The act step calls the "compute" method from the Addition class which contains the code to perform addition with the given values.</li>
+			<li>The assert step verifies that the result from calling compute with the values of 1.0 and 2.0 equals 3.0</li>`
 		</ol>
-
+	</article>
 </body>
 </html>
